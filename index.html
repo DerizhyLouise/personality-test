@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css">
+    <link rel="icon" href="./assets/svg/favicon.svg" type="image/svg+xml">
+    <title>Personality Test</title>
+</head>
+<body class="bg-yellow-200 flex justify-center mt-24">
+
+    <form id="personalityForm" class="block w-8/12 p-6 bg-slate-300 border border-gray-600 rounded-lg shadow">
+        <h1 class="mb-2 text-2xl font-bold tracking-tight">Personality Test</h5>
+        <p class="font-normal">Mohon diisi dengan yang paling sesuai dengan diri masing-masing yah ^^</p>
+        
+        <div class="border-t-2 border-gray-600 my-4 py-2">
+            <h3 class="mb-2 font-semibold">Pilih nama mu</h3>
+            <select id="name" class="bg-gray-50 border bg-slate-200 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+                <option selected disabled>Pilih nama mu</option>
+                <option value="reggina">Reggina Onggata</option>
+                <option value="holanda">Stevanny Holanda</option>
+                <option value="yenni">Yenni Chandra</option>
+                <option value="jesselyn">Jesselyn Pangestu</option>
+            </select>
+        </div>
+        <div class="border-t-2 border-gray-600 my-4 py-2">
+            <h3 class="mb-2 font-semibold">1</h3>
+            <ul class="w-full text-sm font-medium text-gray-900 border border-gray-600 rounded-lg bg-slate-200">
+                <li class="w-full border-b border-gray-600 rounded-t-lg">
+                    <div class="flex items-center p-3">
+                        <input id="Adventurous" type="radio" value="koleris" name="1" class="w-4 h-4 text-black focus:ring-0">
+                        <label for="Adventurous" class="w-full py-3 ms-2 text-sm font-medium text-gray-900">
+                            Adventurous - Suka dan berani melakukan hal-hal baru
+                        </label>
+                    </div>
+                </li>
+                <li class="w-full border-b border-gray-600 rounded-t-lg">
+                    <div class="flex items-center p-3">
+                        <input id="Adaptable" type="radio" value="plegmatis" name="1" class="w-4 h-4 text-black focus:ring-0">
+                        <label for="Adaptable" class="w-full py-3 ms-2 text-sm font-medium text-gray-900">
+                            Adaptable - Mudah menyesuaikan diri dalam setiap situasi
+                        </label>
+                    </div>
+                </li>
+                <li class="w-full border-b border-gray-600 rounded-t-lg">
+                    <div class="flex items-center p-3">
+                        <input id="Animated" type="radio" value="sanguinis" name="1" class="w-4 h-4 text-black focus:ring-0">
+                        <label for="Animated" class="w-full py-3 ms-2 text-sm font-medium text-gray-900">
+                            Animated - Banyak menggunakan bahasa tubuh, banyak gerak, penuh kehidupan
+                        </label>
+                    </div>
+                </li>
+                <li class="w-full border-b border-gray-600 rounded-t-lg">
+                    <div class="flex items-center p-3">
+                        <input id="Analytical" type="radio" value="melankolis" name="1" class="w-4 h-4 text-black focus:ring-0">
+                        <label for="Analytical" class="w-full py-3 ms-2 text-sm font-medium text-gray-900">
+                            Analytical - Bersikap analitis, suka meneliti, merinci sampai hal terkecil
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="my-4 py-2 flex justify-end">
+            <button onclick="calculate()" class="relative inline-flex items-center justify-center p-0.5 mb-2 mt-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-200 text-gray-900 rounded-md group-hover:bg-opacity-0">
+                    Submit
+                </span>
+            </button>
+        </div>
+    </form>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script>
+        function calculate() {
+            let sanguinisCount = 0;
+            let plegmatisCount = 0;
+            let kolerisCount = 0;
+            let melankolisCount = 0;
+
+            const radioButtons = document.querySelectorAll('input[type="radio"]:checked');
+            radioButtons.forEach((radio) => {
+                switch (radio.value) {
+                    case 'sanguinis':
+                        sanguinisCount++;
+                        break;
+                    case 'plegmatis':
+                        plegmatisCount++;
+                        break;
+                    case 'koleris':
+                        kolerisCount++;
+                        break;
+                    case 'melankolis':
+                        melankolisCount++;
+                        break;
+                    default:
+                        break;
+                }
+            });
+            console.log('Sanguinis Count:', sanguinisCount);
+            console.log('Plegmatis Count:', plegmatisCount);
+            console.log('Koleris Count:', kolerisCount);
+            console.log('Melankolis Count:', melankolisCount);
+        }
+    </script>
+</body>
+</html>
