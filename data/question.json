@@ -418,5 +418,425 @@
                 "label": "balanced = stabil dalam kepribadian, seimbang, tidak ekstrim dalam berbagai tindakan"
             }
         ]
+    },
+    {
+        "id": 21,
+        "option": [
+            {
+                "val": "blank",
+                "label": "blank = datar, tidak ekspresif, memperlihatkan sedikit ekspresi pada wajah/bahasa tubuh"
+            },
+            {
+                "val": "bashful",
+                "label": "bashful = menghindari perhatian karena rasa malu mendominasi"
+            },
+            {
+                "val": "brassy",
+                "label": "brassy = suka pamer, menonjolkan diri"
+            },
+            {
+                "val": "bossy",
+                "label": "bossy = suka memerintah, mendominasi, seperti bos"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "option": [
+            {
+                "val": "undisciplined",
+                "label": "undisciplined = tidak taat peraturan, kurang keteraturan"
+            },
+            {
+                "val": "unsympathetic",
+                "label": "unsympathetic = tidak memahami perasaan orang lain, sulit mengenali masalah orang lain"
+            },
+            {
+                "val": "unenthusiastic",
+                "label": "unenthusiastic = tidak bergairah, sering merasa pesimis"
+            },
+            {
+                "val": "unforgiving",
+                "label": "unforgiving = sulit memaafkan, sulit melupakan sakit hati"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "option": [
+            {
+                "val": "reticent",
+                "label": "reticent = menolak atau tidak bersedia ikut terlibat"
+            },
+            {
+                "val": "resentful",
+                "label": "resentful = memendam rasa benci, mudah tersinggung"
+            },
+            {
+                "val": "resistant",
+                "label": "resistant = tidak mudah berubah, menolak cara lain yang bukan caranya sendiri"
+            },
+            {
+                "val": "repetitious",
+                "label": "repetitious = terus menerus mengulang cerita/kisah untuk menghibur orang"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "option": [
+            {
+                "val": "fussy",
+                "label": "fussy = bersikeras tentang persoalan sepele, mempersoalkan hal kecil"
+            },
+            {
+                "val": "fearful",
+                "label": "fearful = takut, kuatir, mudah sedih"
+            },
+            {
+                "val": "forgetful",
+                "label": "forgetful = pelupa, daya ingat lemah"
+            },
+            {
+                "val": "frank",
+                "label": "frank = blak-blakan, langsung mengatakan apa adanya"
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "option": [
+            {
+                "val": "impatient",
+                "label": "impatient = tidak sabar, sulit meredam kekesalan"
+            },
+            {
+                "val": "insecure",
+                "label": "insecure = merasa tidak aman, kurang percaya diri"
+            },
+            {
+                "val": "indecisive",
+                "label": "indecisive = sulit membuat keputusan, tidak bisa tegas"
+            },
+            {
+                "val": "interrupts",
+                "label": "interrupts = suka menyela pembicaraan, lebih suka berbicara"
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "option": [
+            {
+                "val": "unpopular",
+                "label": "unpopular = menuntut kesempurnaan, membuat keputusan yang tidak populer"
+            },
+            {
+                "val": "uninvolved",
+                "label": "uninvolved = tidak mau terlibat pada aktivitas orang lain"
+            },
+            {
+                "val": "unpredictable",
+                "label": "unpredictable = susah diprediksi, fluktuatif"
+            },
+            {
+                "val": "unaffectionate",
+                "label": "unaffectionate = sulit memperlihatkan kasih sayang secara terbuka"
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "option": [
+            {
+                "val": "headstrong",
+                "label": "headstrong = bersikeras memaksakan kehendak sendiri"
+            },
+            {
+                "val": "haphazard",
+                "label": "haphazard = tidak konsisten, berbeda-beda dalam melakukan hal yang sama"
+            },
+            {
+                "val": "hardtoplease",
+                "label": "hardtoplease = sulit dipuaskan karena standarnya terlalu tinggi"
+            },
+            {
+                "val": "hesitant",
+                "label": "hesitant = lambat, ragu dalam bergerak"
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "option": [
+            {
+                "val": "plain",
+                "label": "plain = kepribadian yang datar, tidak memperlihatkan banyak emosi"
+            },
+            {
+                "val": "pessimistic",
+                "label": "pessimistic = melihat sisi buruk lebih dahulu, berpikir kegagalan"
+            },
+            {
+                "val": "proud",
+                "label": "proud = harga diri tinggi, sombong"
+            },
+            {
+                "val": "permissive",
+                "label": "permissive = memberikan toleransi terlalu besar"
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "option": [
+            {
+                "val": "angeredeasily",
+                "label": "angeredeasily = mudah ngambek, berbuat berlebihan"
+            },
+            {
+                "val": "aimless",
+                "label": "aimless = tidak memiliki tujuan jelas"
+            },
+            {
+                "val": "argumentative",
+                "label": "argumentative = suka mendebat, merasa selalu benar"
+            },
+            {
+                "val": "alienated",
+                "label": "alienated = mudah merasa terasing dari orang lain"
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "option": [
+            {
+                "val": "naive",
+                "label": "naive = terlalu menyederhanakan, kurang pengertian dalam hal kehidupan yang dalam"
+            },
+            {
+                "val": "negativeattitude",
+                "label": "negativeattitude = selalu bersikap negatif"
+            },
+            {
+                "val": "nervy",
+                "label": "nervy = peduli keyakinan, semangat dan keberanian"
+            },
+            {
+                "val": "nonchalant",
+                "label": "nonchalant = tidak acuh, bersikap masa bodoh"
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "option": [
+            {
+                "val": "worrier",
+                "label": "worrier = merasa resah, terganggu"
+            },
+            {
+                "val": "withdrawn",
+                "label": "withdrawn = suka menarik diri, mengasingkan diri"
+            },
+            {
+                "val": "workoholic",
+                "label": "workoholic = menetapkan tujuan secara agresif, terus menerus produktif"
+            },
+            {
+                "val": "wantscredit",
+                "label": "wantscredit = menginginkan penghargaan, persetujuan orang lain"
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "option": [
+            {
+                "val": "toosensitive",
+                "label": "toosensitive = terlalu peka/mudah tersingguh"
+            },
+            {
+                "val": "tactless",
+                "label": "tactless = kadang-kadang menyatakan diri dengan cara yang menyinggung"
+            },
+            {
+                "val": "timid",
+                "label": "timid = mundur dari situasi yang sulit"
+            },
+            {
+                "val": "talkactive",
+                "label": "talkactive = suka bicara, sulit untuk mendengarkan"
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "option": [
+            {
+                "val": "doubtful",
+                "label": "doubtful = cenderung bersikap ragu-ragu"
+            },
+            {
+                "val": "disorganized",
+                "label": "disorganized = hidup tidak teratur, berantakan"
+            },
+            {
+                "val": "domineering",
+                "label": "domineering = memaksa mengambil kendali atas situasi"
+            },
+            {
+                "val": "depressed",
+                "label": "depressed = sepanjang waktu merasa tertekan"
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "option": [
+            {
+                "val": "inconsistent",
+                "label": "inconsistent = tidak menentu, serba kontradiktif"
+            },
+            {
+                "val": "introvert",
+                "label": "introvert = pemikiran dan perhatiannya ditujukan ke dalam dirinya sendiri"
+            },
+            {
+                "val": "intolerant",
+                "label": "intolerant = tidak bisa menerima sikap orang lain"
+            },
+            {
+                "val": "indifferent",
+                "label": "indifferent = tidak acuh, menganggap segala sesuatu tidak penting"
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "option": [
+            {
+                "val": "messy",
+                "label": "messy = hidup tidak teratur, berantakan"
+            },
+            {
+                "val": "moody",
+                "label": "moody = tidak mempunyai emosi yang tinggi"
+            },
+            {
+                "val": "mumbles",
+                "label": "mumbles = bicara seperti orang kumur, tidak jelas"
+            },
+            {
+                "val": "manipulative",
+                "label": "manipulative = penuh tipu muslihat, mempengaruhi dengan cerdik"
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "option": [
+            {
+                "val": "slow",
+                "label": "slow = lamban dalam berpikir dan bertindak"
+            },
+            {
+                "val": "stubborn",
+                "label": "stubborn = keras kepala, memaksakan kehendak sendiri"
+            },
+            {
+                "val": "showoff",
+                "label": "showoff = ingin menjadi pusat perhatian, suka pamer"
+            },
+            {
+                "val": "skeptical",
+                "label": "skeptical = tidak mudah percaya, curiga"
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "option": [
+            {
+                "val": "loner",
+                "label": "loner = penyendiri, memerlukan waktu untuk diri sendiri"
+            },
+            {
+                "val": "dominantoverothers",
+                "label": "dominantoverothers = tidak ragu-ragu mengatakan ia memegang kendali"
+            },
+            {
+                "val": "lazy",
+                "label": "lazy = menakar pekerjaan, tidak terlalu aktif"
+            },
+            {
+                "val": "loud",
+                "label": "loud = suaranya atau tawanya mengatasi suara orang lain"
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "option": [
+            {
+                "val": "sluggish",
+                "label": "sluggish = lambat untuk memulai sesuatu"
+            },
+            {
+                "val": "suspicious",
+                "label": "suspicious = cenderung curiga"
+            },
+            {
+                "val": "shorttempered",
+                "label": "shorttempered = cepat marah"
+            },
+            {
+                "val": "scatterbrained",
+                "label": "scatterbrained = susah konsentrasi, pikiran selalu berubah-rubah"
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "option": [
+            {
+                "val": "revengeful",
+                "label": "revengeful = menyimpan rasa dendam, sulit memaafkan"
+            },
+            {
+                "val": "restless",
+                "label": "restless = tidak bisa diam, suka kegiatan baru"
+            },
+            {
+                "val": "reluctant",
+                "label": "reluctant = tidak bersedia ikut terlibat"
+            },
+            {
+                "val": "rush",
+                "label": "rush = bertindak tergesa-gesa"
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "option": [
+            {
+                "val": "compromising",
+                "label": "compromising = suka kompromi"
+            },
+            {
+                "val": "critical",
+                "label": "critical = suka mengevaluasi, menilai"
+            },
+            {
+                "val": "crafty",
+                "label": "crafty = cerdik, selalu menemukan cara"
+            },
+            {
+                "val": "changeable",
+                "label": "changeable = mudah berubah, memerlukan variasi"
+            }
+        ]
     }
 ]

@@ -25,11 +25,7 @@
         </div>
         <div class="form"></div>
         <div class="my-4 py-2 flex justify-end">
-            <button onclick="calculate()" class="relative inline-flex items-center justify-center p-0.5 mb-2 mt-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200">
-                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-200 text-gray-900 rounded-md group-hover:bg-opacity-0">
-                    Submit
-                </span>
-            </button>
+            <input type="submit" class="relative inline-flex items-center justify-center p-2 mb-2 mt-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200">
         </div>
     </form>
     
@@ -53,8 +49,8 @@
                     li.className = "w-full border-b border-gray-600 rounded-t-lg";
                     li.innerHTML = `
                         <div class="flex items-center p-3">
-                            <input type="radio" value="${item.val}" name="${data.id}" class="w-4 h-4 text-black focus:ring-0">
-                            <label class="w-full py-3 ms-2 text-sm font-medium text-gray-900">
+                            <input type="radio" id="${item.val}" value="${item.val}" name="${data.id}" class="w-4 h-4 text-black focus:ring-0">
+                            <label for="${item.val}" class="w-full py-3 ms-2 text-sm font-medium text-gray-900">
                                 ${item.label}
                             </label>
                         </div>
@@ -65,36 +61,80 @@
             });
         });
 
-        function calculate() {
+        function convertToCSV(objArray) {
+            const array = typeof objArray != 'object' ? JSON.parse(objArray) : objArray;
+            let str = '';
+            for (let i = 0; i < array.length; i++) {
+                let line = '';
+                for (let index in array[i]) {
+                    if (line != '') line += ',';
+                    line += array[i][index];
+                }
+                str += line + '\r\n';
+            }
+            return str;
+        }
+
+        function downloadCSV(data, filename) {
+            const csv = convertToCSV(data);
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        $('personalityForm').submit(async function(event){
+            event.preventDefault();
+
             let sanguinisCount = 0;
             let plegmatisCount = 0;
             let kolerisCount = 0;
             let melankolisCount = 0;
 
+            const response = await fetch('./data/personality.json');
+            const result = await response.json();
+            const plegmatisKeys = result[0].key;
+            const melankolisKeys = result[1].key;
+            const kolerisKeys = result[2].key;
+            const sanguinisKeys = result[3].key;
+
             const radioButtons = document.querySelectorAll('input[type="radio"]:checked');
             radioButtons.forEach((radio) => {
-                switch (radio.value) {
-                    case 'sanguinis':
+                const value = radio.value;
+                if (value) {
+                    if (sanguinisKeys.includes(value)) {
                         sanguinisCount++;
-                        break;
-                    case 'plegmatis':
+                    } else if (plegmatisKeys.includes(value)) {
                         plegmatisCount++;
-                        break;
-                    case 'koleris':
+                    } else if (kolerisKeys.includes(value)) {
                         kolerisCount++;
-                        break;
-                    case 'melankolis':
+                    } else if (melankolisKeys.includes(value)) {
                         melankolisCount++;
-                        break;
-                    default:
-                        break;
+                    }
                 }
             });
-            console.log('Sanguinis Count:', sanguinisCount);
-            console.log('Plegmatis Count:', plegmatisCount);
-            console.log('Koleris Count:', kolerisCount);
-            console.log('Melankolis Count:', melankolisCount);
-        }
+
+            const formResult = {
+                "name": $('#name').val(),
+                "answer": radioButtons,
+                "sanguinis": sanguinisCount,
+                "koleris": kolerisCount,
+                "melankolis": melankolisCount,
+                "plegmatis": plegmatisCount,
+            };
+            
+            const dataToExport = [
+                ["Name", "Sanguinis", "Koleris", "Melankolis", "Plegmatis"],
+                [formResult.name, formResult.sanguinis, formResult.koleris, formResult.melankolis, formResult.plegmatis]
+            ];
+
+            return downloadCSV(dataToExport, 'form_result.csv');
+        });
     </script>
 </body>
 </html>
