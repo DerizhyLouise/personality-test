@@ -1,0 +1,422 @@
+[
+    {
+        "id": 1,
+        "option": [
+            {
+                "val": "adventurous",
+                "label": "adventurous = suka dan berani melakukan hal-hal baru"
+            },
+            {
+                "val": "adaptable",
+                "label": "adaptable = mudah menyesuaikan diri dalam setiap situasi"
+            },
+            {
+                "val": "animated",
+                "label": "animated = banyak menggunakan bahasa tubuh, banyak gerak, penuh kehidupan"
+            },
+            {
+                "val": "analytical",
+                "label": "analytical = bersikap analitis, suka meneliti, merinci sampai hal terkecil"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "option": [
+            {
+                "val": "persistent",
+                "label": "persistent = melakukan sesuatu hingga tuntas, sebelum memulai yang lain"
+            },
+            {
+                "val": "playful",
+                "label": "playful = penuh kesenangan, selera humor yang baik"
+            },
+            {
+                "val": "persuasive",
+                "label": "persuasive = meyakinkan orang lain dengan logika/fakta bukan dengan pesona atau kekuasaan"
+            },
+            {
+                "val": "peaceful",
+                "label": "peaceful = tenang/tidak mudah terganggu, menghindari kekacauan"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "option": [
+            {
+                "val": "submissive",
+                "label": "submissive = mudah menerima pandangan/pendapat orang lain"
+            },
+            {
+                "val": "selfsacrificing",
+                "label": "selfsacrificing = bersedia berkorban demi kepentingan orang lain"
+            },
+            {
+                "val": "sociable",
+                "label": "sociable = suka bersama orang lain, bersikap baik dan menghibur"
+            },
+            {
+                "val": "strongwilled",
+                "label": "strongwilled = berkemauan kuat, yakin dengan pendiriannya"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "option": [
+            {
+                "val": "considerate",
+                "label": "considerate = penuh pertimbangan, menghargai kepentingan/perasaan orang lain"
+            },
+            {
+                "val": "controlled",
+                "label": "controlled = jarang memperlihatkan emosi, mampu meredamnya"
+            },
+            {
+                "val": "competitive",
+                "label": "competitive = menganggap setiap kesempatan ajang kontes dan berusaha menang"
+            },
+            {
+                "val": "convincing",
+                "label": "convincing = mampu merebut hati melalui pesona dan meyakinkan orang lain"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "option": [
+            {
+                "val": "refreshing",
+                "label": "refreshing = selalu memperbaharui, membantu/membuat orang lain senang"
+            },
+            {
+                "val": "respectful",
+                "label": "respectful = memperlakukan orang lain dengan rasa hormat"
+            },
+            {
+                "val": "reserved",
+                "label": "reserved = menahan diri/tidak menunjukkan emosi atau semangat"
+            },
+            {
+                "val": "resourceful",
+                "label": "resourceful = bertindak cepat dan efektif dalam semua situasi"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "option": [
+            {
+                "val": "satisfied",
+                "label": "satisfied = mudah puas, menerima situasi apa saja"
+            },
+            {
+                "val": "sensitive",
+                "label": "sensitive = peka terhadap situasi dan kondisi orang lain"
+            },
+            {
+                "val": "selfreliant",
+                "label": "selfreliant = mandiri, mengandalkan kemampuan/sumber daya sendiri"
+            },
+            {
+                "val": "spirited",
+                "label": "spirited = penuh gairah dan kehidupan"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "option": [
+            {
+                "val": "planner",
+                "label": "planner = suka membuat perencanaan/persiapan rinci"
+            },
+            {
+                "val": "patient",
+                "label": "patient = sabar, tidak terpengaruh oleh penundaan"
+            },
+            {
+                "val": "positive",
+                "label": "positive = bersikap positif, yakin semuanya akan beres"
+            },
+            {
+                "val": "promoter",
+                "label": "promoter = mendorong, memberi semangat kepada orang lain"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "option": [
+            {
+                "val": "sure",
+                "label": "sure = yakin, jarang goyah, bertindak tanpa ragu-ragu"
+            },
+            {
+                "val": "spontaneous",
+                "label": "spontaneous = impulsif, tidak dipikirkan matang-matang sebelum bertindak"
+            },
+            {
+                "val": "scheduled",
+                "label": "scheduled = bersifat rigid dengan tahapan kegiatan yang telah diatur"
+            },
+            {
+                "val": "shy",
+                "label": "shy = pendiam, pemalu, tidak mudah terlibat percakapan"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "option": [
+            {
+                "val": "orderly",
+                "label": "orderly = segala sesuatu diatur secara sistematis"
+            },
+            {
+                "val": "obliging",
+                "label": "obliging = bisa menerima apa saja, dan melakukannya dengan cara lain"
+            },
+            {
+                "val": "outspoken",
+                "label": "outspoken = bicara terus terang, tanpa menahan diri"
+            },
+            {
+                "val": "optimistic",
+                "label": "optimistic = penuh optimisme, yakin semuanya akan beres"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "option": [
+            {
+                "val": "friendly",
+                "label": "friendly = menanggapi dengan ramah, jarang memulai percakapan"
+            },
+            {
+                "val": "faithful",
+                "label": "faithful = secara konsisten setia, mengabdi tanpa pamrih"
+            },
+            {
+                "val": "funny",
+                "label": "funny = memiliki rasa humor yang kreatif, bisa membuat suasana ceria"
+            },
+            {
+                "val": "forceful",
+                "label": "forceful = dominan, memaksa, membuat orang lain ragu untuk menentangnya"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "option": [
+            {
+                "val": "daring",
+                "label": "daring = berani, tak kenal takut, bersedia mengambil resiko"
+            },
+            {
+                "val": "delightful",
+                "label": "delightful = menyenangkan sebagai teman"
+            },
+            {
+                "val": "diplomatic",
+                "label": "diplomatic = penuh siasat, diplomasi, perasa dan sabar"
+            },
+            {
+                "val": "detailed",
+                "label": "detailed = rinci dan runut, memiliki daya ingat yang baik tentang segala sesuatu"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "option": [
+            {
+                "val": "cheerful",
+                "label": "cheerful = mengungkapkan kebahagiaan kepada orang lain, memiliki semangat tinggi"
+            },
+            {
+                "val": "consistent",
+                "label": "consistent = tetap seimbang, teguh secara emosional"
+            },
+            {
+                "val": "cultured",
+                "label": "cultured = melibatkan tujuan intelektual dan artistik"
+            },
+            {
+                "val": "confident",
+                "label": "confident = penuh percaya diri, yakin akan kemampuan diri sendiri"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "option": [
+            {
+                "val": "idealistic",
+                "label": "idealistic = perfeksionis, segala sesuatu harus sempurna dan memenuhi standar"
+            },
+            {
+                "val": "independent",
+                "label": "independent = mandiri, percaya diri, tidak tergantung pada orang lain"
+            },
+            {
+                "val": "inoffensive",
+                "label": "inoffensive = tidak suka menyerang, membuat pernyataan atau tindakan yang tidak menyenangkan"
+            },
+            {
+                "val": "inspiring",
+                "label": "inspiring = mendorong orang lain untuk bergabung ikut bekerja, terlibat, melakukan hal-hal yang ia lakukan"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "option": [
+            {
+                "val": "demonstrative",
+                "label": "demonstrative = terang-terangan menyatakan emosi, suka menyentuh orang lain ketika berbicara"
+            },
+            {
+                "val": "decisive",
+                "label": "decisive = kemampuan mengambil keputusan, membuat penilaian dengan cepat dan tegas"
+            },
+            {
+                "val": "dryhumor",
+                "label": "dryhumor = kepandaian bicara yang menggigit, menggunakan kalimat-kalimat singkat bersifat sarkastis"
+            },
+            {
+                "val": "deep",
+                "label": "deep = intensif dan mendalam, tidak suka percakapan yang bersifat dangkal"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "option": [
+            {
+                "val": "mediator",
+                "label": "mediator = senang memainkan peran sebagai penengah atau merukunkan konflik"
+            },
+            {
+                "val": "musical",
+                "label": "musical = suka musik, menghayati, dan menikmati sebagai bentuk seni"
+            },
+            {
+                "val": "mover",
+                "label": "mover = tidak bisa diam, selalu terdorong untuk terus bergerak, terus produktif"
+            },
+            {
+                "val": "mixeseasily",
+                "label": "mixeseasily = suka berteman dengan siapa saja, tidak menganggap orang lain asing"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "option": [
+            {
+                "val": "thoughtful",
+                "label": "thoughtful = tanggap, cepat memanfaatkan setiap kesempatan, cepat memberi respons yang positif"
+            },
+            {
+                "val": "tenacious",
+                "label": "tenacious = berpendirian teguh, cenderung keras kepala, tidak mau menyerah sampai tujuan tercapai"
+            },
+            {
+                "val": "talker",
+                "label": "talker = suka berbicara, menceritakan kisah-kisah lucu, membuat orang lain terhibur"
+            },
+            {
+                "val": "tolerant",
+                "label": "tolerant = mudah menerima pemikiran dan cara orang lain, tanpa perlu mengubahnya"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "option": [
+            {
+                "val": "listener",
+                "label": "listener = mendengarkan apa yang dikatakan, cenderung menjadi pendengar yang baik"
+            },
+            {
+                "val": "loyal",
+                "label": "loyal = setia kepada seseorang/gagasan/pekerjaan sering kali tanpa alasan jelas"
+            },
+            {
+                "val": "leader",
+                "label": "leader = suka memberi pengarahan, terdorong untuk memimpin"
+            },
+            {
+                "val": "lively",
+                "label": "lively = penuh kehidupan, semangat, dan kuat"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "option": [
+            {
+                "val": "contented",
+                "label": "contented = mudah puas dengan apa yang dimilikinya"
+            },
+            {
+                "val": "chief",
+                "label": "chief = mengharapkan orang lain mau mengikutinya, ingin memegang kendali/kepemimpinan"
+            },
+            {
+                "val": "chartmaker",
+                "label": "chartmaker = suka mengatur tugas, pekerjaan, pemecahan masalah dengan membuat rencana"
+            },
+            {
+                "val": "cute",
+                "label": "cute = menjadi pusat perhatian, dicintai, disukai, dalam setiap kesempatan"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "option": [
+            {
+                "val": "perfectionist",
+                "label": "perfectionist = membuat standar tinggi untuk diri sendiri dan orang lain"
+            },
+            {
+                "val": "pleasant",
+                "label": "pleasant = mudah bergaul, bersifat terbuka, menyenangkan"
+            },
+            {
+                "val": "productive",
+                "label": "productive = terus-menerus bekerja atau mencapai sesuatu, sering merasa sulit beristirahat"
+            },
+            {
+                "val": "popular",
+                "label": "popular = orang yang suka menghidupkan suasana, diinginkan kehadirannya dalam suatu pesta"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "option": [
+            {
+                "val": "bouncy",
+                "label": "bouncy = berlebihan, kepribadian yang hidup, penuh tenaga"
+            },
+            {
+                "val": "bold",
+                "label": "bold = tidak kenal rasa takut, berani, terus terang"
+            },
+            {
+                "val": "behaved",
+                "label": "behaved = perilaku mengikuti budaya, aturan, membawakan dirinya dalam batas-batas norma"
+            },
+            {
+                "val": "balanced",
+                "label": "balanced = stabil dalam kepribadian, seimbang, tidak ekstrim dalam berbagai tindakan"
+            }
+        ]
+    }
+]
