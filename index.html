@@ -9,14 +9,13 @@
 </head>
 <body class="bg-[#0D192B] flex justify-center my-24">
 
-    <form id="personalityForm" class="block w-8/12 p-6 bg-slate-300 border border-gray-600 rounded-lg shadow">
+    <form id="personalityForm" class="block w-8/12 p-6 bg-sky-200 border border-gray-600 rounded-lg shadow">
         <h1 class="mb-2 text-2xl font-bold tracking-tight">Personality Test</h5>
         <p class="font-normal">Mohon diisi dengan yang paling sesuai dengan diri masing-masing yah ^^</p>
         
         <div class="border-t-2 border-gray-600 my-4 py-2">
             <h3 class="mb-2 font-semibold">Pilih nama mu</h3>
-            <select id="name" class="bg-gray-50 border bg-indigo-200 text-gray-900 text-sm rounded-lg block w-3/12 p-2.5">
-                <option selected disabled>Pilih nama mu</option>
+            <select id="name" class="bg-gray-50 border bg-indigo-200 text-gray-900 text-sm rounded-lg block w-3/12 p-2.5" required>
                 <option value="reggina">Reggina Onggata</option>
                 <option value="holanda">Stevanny Holanda</option>
                 <option value="yenni">Yenni Chandra</option>
@@ -32,109 +31,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-    <script>
-        fetch('./data/question.json').then(response => response.json()).then(questions => {
-            const form = $('.form');
-            questions.forEach((data) => {
-                const div = document.createElement('div');
-                div.className = "border-t-2 border-gray-600 my-4 py-2";
-                div.innerHTML = `
-                    <h3 class="mb-2 font-semibold">${data.id}</h3>
-                    <ul class="w-full text-sm font-medium text-gray-900 border border-gray-600 rounded-lg bg-indigo-200"></ul>
-                `;
-    
-                data.option.forEach((item) => {
-                    const ul = div.querySelector('ul');
-                    const li = document.createElement('li');
-                    li.className = "w-full border-b border-gray-600 rounded-t-lg";
-                    li.innerHTML = `
-                        <div class="flex items-center p-3">
-                            <input type="radio" id="${item.val}" value="${item.val}" name="${data.id}" class="w-4 h-4 text-black focus:ring-0">
-                            <label for="${item.val}" class="w-full py-3 ms-2 text-sm font-medium text-gray-900">
-                                ${item.label}
-                            </label>
-                        </div>
-                    `;
-                    ul.append(li);
-                });
-                form.append(div);
-            });
-        });
-
-        function convertToCSV(objArray) {
-            const array = typeof objArray != 'object' ? JSON.parse(objArray) : objArray;
-            let str = '';
-            for (let i = 0; i < array.length; i++) {
-                let line = '';
-                for (let index in array[i]) {
-                    if (line != '') line += ',';
-                    line += array[i][index];
-                }
-                str += line + '\r\n';
-            }
-            return str;
-        }
-
-        function downloadCSV(data, filename) {
-            const csv = convertToCSV(data);
-            const blob = new Blob([csv], { type: 'text/csv' });
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = filename;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            window.URL.revokeObjectURL(url);
-        }
-
-        $('personalityForm').submit(async function(event){
-            event.preventDefault();
-
-            let sanguinisCount = 0;
-            let plegmatisCount = 0;
-            let kolerisCount = 0;
-            let melankolisCount = 0;
-
-            const response = await fetch('./data/personality.json');
-            const result = await response.json();
-            const plegmatisKeys = result[0].key;
-            const melankolisKeys = result[1].key;
-            const kolerisKeys = result[2].key;
-            const sanguinisKeys = result[3].key;
-
-            const radioButtons = document.querySelectorAll('input[type="radio"]:checked');
-            radioButtons.forEach((radio) => {
-                const value = radio.value;
-                if (value) {
-                    if (sanguinisKeys.includes(value)) {
-                        sanguinisCount++;
-                    } else if (plegmatisKeys.includes(value)) {
-                        plegmatisCount++;
-                    } else if (kolerisKeys.includes(value)) {
-                        kolerisCount++;
-                    } else if (melankolisKeys.includes(value)) {
-                        melankolisCount++;
-                    }
-                }
-            });
-
-            const formResult = {
-                "name": $('#name').val(),
-                "answer": radioButtons,
-                "sanguinis": sanguinisCount,
-                "koleris": kolerisCount,
-                "melankolis": melankolisCount,
-                "plegmatis": plegmatisCount,
-            };
-            
-            const dataToExport = [
-                ["Name", "Sanguinis", "Koleris", "Melankolis", "Plegmatis"],
-                [formResult.name, formResult.sanguinis, formResult.koleris, formResult.melankolis, formResult.plegmatis]
-            ];
-
-            return downloadCSV(dataToExport, 'form_result.csv');
-        });
-    </script>
+    <script src="./main.js"></script>
 </body>
 </html>

@@ -50,7 +50,7 @@
             },
             {
                 "val": "selfsacrificing",
-                "label": "selfsacrificing = bersedia berkorban demi kepentingan orang lain"
+                "label": "self sacrificing = bersedia berkorban demi kepentingan orang lain"
             },
             {
                 "val": "sociable",
@@ -58,7 +58,7 @@
             },
             {
                 "val": "strongwilled",
-                "label": "strongwilled = berkemauan kuat, yakin dengan pendiriannya"
+                "label": "strong willed = berkemauan kuat, yakin dengan pendiriannya"
             }
         ]
     },
@@ -117,7 +117,7 @@
             },
             {
                 "val": "selfreliant",
-                "label": "selfreliant = mandiri, mengandalkan kemampuan/sumber daya sendiri"
+                "label": "self reliant = mandiri, mengandalkan kemampuan/sumber daya sendiri"
             },
             {
                 "val": "spirited",
@@ -305,12 +305,12 @@
                 "label": "musical = suka musik, menghayati, dan menikmati sebagai bentuk seni"
             },
             {
-                "val": "mover",
-                "label": "mover = tidak bisa diam, selalu terdorong untuk terus bergerak, terus produktif"
+                "val": "easilymover",
+                "label": "easily mover = tidak bisa diam, selalu terdorong untuk terus bergerak, terus produktif"
             },
             {
                 "val": "mixeseasily",
-                "label": "mixeseasily = suka berteman dengan siapa saja, tidak menganggap orang lain asing"
+                "label": "mixes easily = suka berteman dengan siapa saja, tidak menganggap orang lain asing"
             }
         ]
     },
@@ -369,7 +369,7 @@
             },
             {
                 "val": "chartmaker",
-                "label": "chartmaker = suka mengatur tugas, pekerjaan, pemecahan masalah dengan membuat rencana"
+                "label": "chart maker = suka mengatur tugas, pekerjaan, pemecahan masalah dengan membuat rencana"
             },
             {
                 "val": "cute",
@@ -519,8 +519,8 @@
                 "label": "indecisive = sulit membuat keputusan, tidak bisa tegas"
             },
             {
-                "val": "interrupts",
-                "label": "interrupts = suka menyela pembicaraan, lebih suka berbicara"
+                "val": "interrupt",
+                "label": "interrupt = suka menyela pembicaraan, lebih suka berbicara"
             }
         ]
     },
@@ -558,7 +558,7 @@
             },
             {
                 "val": "hardtoplease",
-                "label": "hardtoplease = sulit dipuaskan karena standarnya terlalu tinggi"
+                "label": "hard to please = sulit dipuaskan karena standarnya terlalu tinggi"
             },
             {
                 "val": "hesitant",
@@ -592,7 +592,7 @@
         "option": [
             {
                 "val": "angeredeasily",
-                "label": "angeredeasily = mudah ngambek, berbuat berlebihan"
+                "label": "angered easily = mudah ngambek, berbuat berlebihan"
             },
             {
                 "val": "aimless",
@@ -617,7 +617,7 @@
             },
             {
                 "val": "negativeattitude",
-                "label": "negativeattitude = selalu bersikap negatif"
+                "label": "negative attitude = selalu bersikap negatif"
             },
             {
                 "val": "nervy",
@@ -646,7 +646,7 @@
             },
             {
                 "val": "wantscredit",
-                "label": "wantscredit = menginginkan penghargaan, persetujuan orang lain"
+                "label": "wants credit = menginginkan penghargaan, persetujuan orang lain"
             }
         ]
     },
@@ -655,7 +655,7 @@
         "option": [
             {
                 "val": "toosensitive",
-                "label": "toosensitive = terlalu peka/mudah tersingguh"
+                "label": "too sensitive = terlalu peka/mudah tersingguh"
             },
             {
                 "val": "tactless",
@@ -667,7 +667,7 @@
             },
             {
                 "val": "talkactive",
-                "label": "talkactive = suka bicara, sulit untuk mendengarkan"
+                "label": "talk active = suka bicara, sulit untuk mendengarkan"
             }
         ]
     },
@@ -764,7 +764,7 @@
             },
             {
                 "val": "dominantoverothers",
-                "label": "dominantoverothers = tidak ragu-ragu mengatakan ia memegang kendali"
+                "label": "dominant over others = tidak ragu-ragu mengatakan ia memegang kendali"
             },
             {
                 "val": "lazy",
@@ -789,7 +789,7 @@
             },
             {
                 "val": "shorttempered",
-                "label": "shorttempered = cepat marah"
+                "label": "short tempered = cepat marah"
             },
             {
                 "val": "scatterbrained",
