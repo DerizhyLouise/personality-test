@@ -2,10 +2,10 @@ fetch("./data/question.json").then((response) => response.json()).then((question
     const form = $(".form");
     questions.forEach((data) => {
         const div = document.createElement("div");
-        div.className = "border-t-2 border-gray-600 my-4 py-2";
+        div.className = "border-t-2 border-gray-600 my-4 py-2 flex flex-row";
         div.innerHTML = `
-            <h3 class="mb-2 font-semibold">${data.id}</h3>
-            <ul class="w-full text-sm font-medium text-gray-900 border border-gray-600 rounded-lg bg-indigo-200"></ul>
+            <h3 class="mb-2 mr-4 font-semibold">${data.id}.</h3>
+            <ul class="w-full text-sm font-medium text-gray-900 border border-gray-600 rounded-lg bg-cyan-50"></ul>
         `;
 
         data.option.forEach((item) => {
