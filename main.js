@@ -26,16 +26,21 @@ fetch("./data/question.json").then((response) => response.json()).then((question
     });
 });
 
-let isChange = false;
-$(document).ready(function () {
-    $("input[type='radio']").change(function () {
-        isChange = true;
-    })
-});
-$(window).unload(function () {
-    if (isChange) {
-        alert('Handler for .unload() called.');
-    }
+$(document).ready(function() {
+    let formSubmitting = false;
+    let setFormSubmitting = function() { formSubmitting = true; };
+
+    $(window).on("beforeunload", function (e) {
+        if (formSubmitting) {
+            return undefined;
+        }
+
+        let confirmationMessage = 'It looks like you have been editing something. '
+                                + 'If you leave before saving, your changes will be lost.';
+
+        (e || window.event).returnValue = confirmationMessage;
+        return confirmationMessage;
+    });
 });
 
 function convertToCSV(objArray) {
