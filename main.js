@@ -4,7 +4,7 @@ fetch("./data/question.json").then((response) => response.json()).then((question
         const div = document.createElement("div");
         div.className = "border-t-2 border-gray-600 my-4 py-2 flex flex-row";
         div.innerHTML = `
-            <h3 class="mb-2 mr-4 font-semibold">${data.id}.</h3>
+            <h3 class="mb-2 mr-4 font-semibold w-5 text-right">${data.id}.</h3>
             <ul class="w-full text-sm font-medium text-gray-900 border border-gray-600 rounded-lg bg-cyan-50"></ul>
         `;
 
@@ -14,8 +14,8 @@ fetch("./data/question.json").then((response) => response.json()).then((question
             li.className = "w-full border-b border-gray-600 rounded-t-lg";
             li.innerHTML = `
                 <div class="flex items-center p-3">
-                    <input type="radio" id="${item.val}" value="${item.val}" name="${data.id}" class="w-4 h-4 text-black focus:ring-0" required>
-                    <label for="${item.val}" class="w-full py-3 ms-2 text-sm font-medium text-gray-900">
+                    <input type="radio" id="${item.val}" value="${item.val}" name="${data.id}" class="w-4 h-4 text-black focus:ring-0 cursor-pointer" required>
+                    <label for="${item.val}" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 cursor-pointer">
                         ${item.label}
                     </label>
                 </div>
