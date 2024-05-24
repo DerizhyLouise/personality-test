@@ -113,7 +113,7 @@ $("#personalityForm").submit(async function (event) {
 
     console.log(formResult)
 
-    return fetch(`https://appcluster.homtmh.local/administration/personality`, {
+    return await fetch(`https://appcluster.homtmh.local/administration/personality`, {
         method: "POST",
         body: JSON.stringify(formResult),
         headers: {
