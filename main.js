@@ -105,24 +105,34 @@ $("#personalityForm").submit(async function (event) {
 
     const formResult = {
         name: $("#name").val(),
-        answer: answerArr,
-        sanguinis: sanguinisCount,
-        koleris: kolerisCount,
-        melankolis: melankolisCount,
-        plegmatis: plegmatisCount,
+        sanguine: sanguinisCount,
+        choleric: kolerisCount,
+        melancholic: melankolisCount,
+        phlegmatic: plegmatisCount,
     };
 
-    const dataToExport = [
-        ["Name", "Sanguinis", "Koleris", "Melankolis", "Plegmatis", "All_Answer"],
-        [
-          formResult.name,
-          formResult.sanguinis,
-          formResult.koleris,
-          formResult.melankolis,
-          formResult.plegmatis,
-          formResult.answer,
-        ],
-    ];
+    console.log(formResult)
 
-    return downloadCSV(dataToExport, formResult.name + ".csv");
+    return fetch(`https://appcluster.homtmh.local/administration/personality`, {
+        method: "POST",
+        body: JSON.stringify(formResult),
+        headers: {
+            "Content-Type": "application/json",
+
+        }
+    })
+
+    // const dataToExport = [
+    //     ["Name", "Sanguinis", "Koleris", "Melankolis", "Plegmatis", "All_Answer"],
+    //     [
+    //       formResult.name,
+    //       formResult.sanguinis,
+    //       formResult.koleris,
+    //       formResult.melankolis,
+    //       formResult.plegmatis,
+    //       formResult.answer,
+    //     ],
+    // ];
+
+    // return downloadCSV(dataToExport, formResult.name + ".csv");
 });
