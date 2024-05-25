@@ -117,7 +117,7 @@ $("#personalityForm").submit(async function (event) {
   };
 
   const res = document.getElementById("result");
-  res.innerHTML += `
+  res.innerHTML = `
         <div class="p-4 border-2 border-gray-600 rounded-lg w-auto">
             <h2 class="border-b-2 border-gray-600 pb-2">Hasil</h2>
             <table>
