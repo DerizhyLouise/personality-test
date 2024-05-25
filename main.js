@@ -16,7 +16,7 @@ fetch("./data/question.json")
         li.className = "w-full border-b border-gray-600 rounded-t-lg";
         li.innerHTML = `
                 <div class="flex items-center p-3">
-                    <input type="radio" id="${item.val}" value="${item.val}" name="${data.id}" class="w-4 h-4 text-black focus:ring-0 cursor-pointer">
+                    <input type="radio" id="${item.val}" value="${item.val}" name="${data.id}" class="w-4 h-4 text-black focus:ring-0 cursor-pointer required">
                     <label for="${item.val}" class="w-full py-3 ms-2 text-sm font-medium text-gray-900 cursor-pointer">
                         ${item.label}
                     </label>
