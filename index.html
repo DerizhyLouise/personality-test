@@ -5,37 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Louise Derizhy">
-    <meta name="keywords" content="Melankolis, Koleris, Sanguinis, Plegmatis, Personality, Test">
+    <meta name="keywords" content="Melankolis, Koleris, Sanguinis, Plegmatis, Personality, Test, 4 temperament, temperament, person, character, type">
     <meta name="description" content="Personality Test">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css">
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Personality Test</title>
 </head>
 
-<body class="bg-[#0D192B] flex justify-center my-24">
+<body class="bg-gray-900 text-gray-100 flex justify-center items-center min-h-screen p-6">
+    <div class="w-full max-w-3xl bg-gray-800 shadow-lg rounded-lg p-8">
+        <h1 class="text-3xl font-bold text-center text-white">Personality Test</h1>
+        <p class="text-center text-gray-300 mb-6">Jawablah pertanyaan dengan jujur untuk hasil terbaik</p>
 
-    <form id="personalityForm" onsubmit="setFormSubmitting()"
-        class="block w-8/12 max-sm:w-11/12 p-6 bg-sky-100 border border-gray-600 rounded-lg shadow">
-        <h1 class="mb-2 text-2xl font-bold tracking-tight">Personality Test</h5>
-            <p class="font-normal">Mohon diisi dengan yang paling sesuai dengan diri masing-masing yah ^^</p>
-
-            <div class="border-t-2 border-gray-600 my-4 py-2">
-                <h3 class="mb-2 font-semibold">Nama</h3>
-                <input type="text" id="name"
-                    class="bg-gray-50 border bg-cyan-50 text-gray-900 text-sm rounded-lg block w-3/12 max-xl:w-3/6 max-sm:w-full p-2.5"
-                    required />
+        <form id="personalityForm" class="space-y-4" onsubmit="setFormSubmitting()">
+            <div>
+                <label for="name" class="block font-semibold text-gray-200">Nama</label>
+                <input type="text" id="name" required
+                    class="mt-1 w-full p-3 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
             </div>
-            <div class="form"></div>
-            <div class="py-4 flex justify-end">
-                <input type="submit"
-                    class="relative inline-flex items-center justify-center p-4 me-2 overflow-hidden text-sm text-white font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 cursor-pointer hover:from-orange-400 hover:to-pink-500 focus:ring-4 focus:outline-none focus:ring-pink-200">
-            </div>
-            <div id="result">
 
-            </div>
-    </form>
+            <div class="form space-y-4"></div>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+            <button type="submit" class="w-full relative py-3 px-6 rounded-lg font-semibold text-white bg-gradient-to-br from-pink-500 to-orange-400 
+    shadow-md hover:from-orange-400 hover:to-pink-500 transition-all duration-300 ease-in-out 
+    focus:ring-4 focus:ring-pink-300 active:scale-95">
+                <span class="relative z-10">🚀 Submit</span>
+                <div
+                    class="absolute inset-0 bg-white opacity-0 rounded-lg transition-opacity duration-300 hover:opacity-10">
+                </div>
+            </button>
+
+        </form>
+
+        <div id="result" class="mt-6"></div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script src="./main.js"></script>
